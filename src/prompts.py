@@ -6,7 +6,7 @@ def ask_questions():
 
     template = questionary.select(
         "Choose template:",
-        choices=["FastAPI", "Flask API", "CLI Tool", "Telegram Bot"],
+        choices=["FastAPI", "Aiogram"],
     ).ask()
 
     git = questionary.confirm("Initialize git?").ask()
