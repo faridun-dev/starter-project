@@ -9,7 +9,3 @@ app = typer.Typer()
 def create():
     answers = ask_questions()
     create_project(answers)
-
-
-if __name__ == "__main__":
-    app()
