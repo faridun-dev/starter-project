@@ -107,7 +107,7 @@ telegram_bot/
 
 ### `main.py`
 
-The entry point of the bot.  
+The entry point of the bot.
 It initializes:
 
 - Bot instance
