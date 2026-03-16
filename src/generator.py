@@ -1,6 +1,7 @@
 import shutil
-import os
+import subprocess
 from pathlib import Path
+
 
 def create_project(config):
     template = config["template"].lower().replace(" ", "_")
@@ -14,4 +15,5 @@ def create_project(config):
     print(f"Project '{project_name}' created!")
 
     if config["git"]:
-        os.system(f"cd {project_name} && git init")
+        command = f"cd {project_name} & git init"
+        subprocess.run(command, shell=True)
